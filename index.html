@@ -6,63 +6,37 @@
     <title>BIBIN KP</title>
     <link rel="icon" href="https://images-workbench.99static.com/TCcTcZcW_7_Q3awr5aIxiV7bdRE=/http://s3.amazonaws.com/projects-files/70/7034/703470/1d5dd401-0892-4a94-8be9-5ae53363c6e8.gif" type="image/icon type">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <style>
-      .card{
-        height: 100%;
-      }
-      .card1{
-        height: 100%;
-
-      }
-      .custom-rounded-image {
-      width: 300px; 
-      height: 300px; 
-      align-self: center;
-      object-fit: cover; 
-      border-radius: 50%; 
-    }
-    .form-control{
-      border-color:rgb(176, 173, 173);
-      border-style: double;
-    }
-    .inp{
-      color: black;
-      font-weight: 475;
-      margin-bottom: .2rem;
-    }
-    .btn1{
-      font-weight: 600;
-    }
-    .color{
-      background-color: #65c4e1;
-    }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js">
+  
+    </script>
 </head>
-<body style="background-image: linear-gradient(to right top, #b2e9f7, #b6e5f0, #bbe0e9, #bedce3, #c2d7dc);background-image: linear-gradient(to left bottom, #dbf3f9, #dbf1f7, #daeef5, #daecf2, #d9eaf0);">
-
-    <header  class="color" style="position: fixed;width: 100%; z-index: 1;">
+<body class="body" style="background-image: linear-gradient(to right top, #b2e9f7, #b6e5f0, #bbe0e9, #bedce3, #c2d7dc);background-image: linear-gradient(to left bottom, #dbf3f9, #dbf1f7, #daeef5, #daecf2, #d9eaf0);"> 
+  <header  class="color" style="position: fixed;width: 100%; z-index: 1;">
         <div class="row text-white">
             <div class="col-md-6  col-9 p-3 ps-5">
                 <h2 >BIBIN KP</h2>
             </div>
+            <button onclick="goToTop()" id="goToTopButton" title="Go to top">🡅</button>
             <div class="col-md-6 col-3 my-auto ">
                 <nav class="navbar navbar-expand-lg navbar-light ">
                     <div class="container-fluid me-auto">
                      <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
-                      <div class=" collapse navbar-collapse " id="navbarSupportedContent">
-                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0  ">
-                          <li class="nav-item">
+                      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ms-auto ">
+                          <li class="nav-item ms-auto ">
                             <a class="nav-link active text-white" aria-current="page" href="#home">Home</a>
                           </li>
-                          <li class="nav-item">
+                          <li class="nav-item ms-auto">
                             <a class="nav-link text-white" href="#service">Services</a>
                           </li>
-                          <li class="nav-item">
+                          <li class="nav-item ms-auto">
                             <a class="nav-link text-white" href="#experiences">Experience</a>
                           </li>
-                          <li class="nav-item">
+                          <li class="nav-item ms-auto">
                             <a class="nav-link text-white" href="#contactme">Contacts</a>
                           </li>
                         </ul>
@@ -70,10 +44,9 @@
                     </div>
                   </nav>
             </div>
-        </div>
-       
+        </div> 
     </header>
-
+    <div class="fade-in">
     <section id="home" style="padding-top: 9em;">
       <div class="container">
         <div class="row align-item-center text-center">
@@ -92,7 +65,7 @@
     <section id="service" class="p-3">
       <div class="container text-center">
         <div class="row">
-          <h2 class="text-center">Services</h2>
+          <h2 class="text-center" >Services</h2>
           <div class="p-4 col-md-4 col-12">
             <div class="card text-center p-3 card h-100" >
               <i class="fa-solid fa-cloud display-1 text-info"></i>
@@ -108,18 +81,14 @@
               <div class="card-body " >
                 <h5 class="card-title">Network Security</h5>
                 <p style="font-weight: 500;color: #2b2a2a;" class="card-text">Network security services help protect a business' network from unauthorized access. IT services can create and issue access authorization to those who need it. They also provide many other services to protect your network, including:
-
                   Building firewalls
                   Installing anti-virus software
                   Installing virtual private networks (VPNs)
-                  Performing regular network checkups                                                                                                                                                                                                                                
-                
-                
-                
+                  Performing regular network checkups                                                                                                                                                                                                                               
                 </p>
               </div>
             </div>
-          </div>
+          </div> 
           <div class="p-4 col-md-4">
             <div class="card text-center p-3 card h-100">
               <i class="fa-brands fa-watchman-monitoring display-1 text-center text-info"></i>
@@ -133,7 +102,7 @@
         <div class="row">
           <div class="p-4 col-md-4">
             <div class="card text-center p-3 card h-100">
-              <i class="fa-sharp fa-light fa-headset display-1 text-center text-info"></i>
+              <i class="fa-sharp fa-solid fa-desktop display-1 text-center text-info"></i>
               <div class="card-body">
                 <h5 class="card-title">Remote Support</h5>
                 <p style="font-weight: 500;color: #2b2a2a;" class="card-text">Many IT services can provide technical support remotely. For instance, if one of your devices experiences an issue, IT services can access it through the internet to troubleshoot and repair it. Remote support allows them to find and repair issues more quickly and can apply to multiple devices, including most mobile devices. Having IT services with remote support capabilities can reduce the time to update applications and repair technical errors so your work can continue with minimal interruption.</p>
@@ -153,7 +122,7 @@
             <div class="card text-center p-3 card h-100">
               <i class="fa-sharp fa-solid fa-circle-exclamation display-1 text-center text-info"></i>
               <div class="card-body">
-                <h5 class="card-title">Troble Shooting And Technica</h5>
+                <h5 class="card-title">Troble Shooting And Technical</h5>
                 <p style="font-weight: 500;color: #2b2a2a;" class="card-text">IT services for many organizations also include technical support and troubleshooting for software applications, programs and online tools. Teams that offer these services often guide users through the process of resolving technical errors or recommend further steps to take, such as sending in the device for repairs. With a dedicated technical support service, your organization can receive the technical assistance it needs when staff members have questions or challenges when using company software.</p>
               </div>
             </div>
@@ -186,7 +155,6 @@
               <div class="card-body">
                 <h5 class="card-title">Info Campus</h5>
                 <p style="font-weight: 500;color: #2b2a2a;" class="card-text">                                                                                                                                                                                                                              
-                
                 Attends an internship class about Networking and Web development
                 </p>
               </div>
@@ -220,7 +188,7 @@
               </div>
               <div class="form-group col-md-6">
                 <label class="inp">PHONE NUMBER</label>
-                <input type="password" class="form-control" id="inputPassword4" placeholder="">
+                <input type="text" class="form-control" id="inputPassword4" placeholder="">
               </div>
             </div>
             <div class="row">
@@ -236,7 +204,7 @@
             <div class="row">
               <div class="col-md-12 form-group col-md-6">
                 <label class="inp">COMMENT</label>
-                <textarea class="form-control" name="" id="" cols="30" rows="10"></textarea>
+                <textarea class="form-control" name="" id="inputarea" cols="30" rows="10"></textarea>
               </div>
               </div>
               <br>
@@ -250,18 +218,16 @@
     <section >
       <footer class="color">
         <div class="row">
-
           <div class="col-md-12 text-center p-3">
             <a style="margin: .3em;" href="https://www.facebook.com/bibinkp.kp.12"><i style="color:#0c4fd6;" class="fa-brands fa-square-facebook display-.8 "></i></a>
             <a style="margin: .3em;" href="https://www.instagram.com/bibi____n__749_/"><i style="color:  #E4405F;" class="fa-brands fa-square-instagram display-.8"></i></a>
             <a style="margin: .3em;" href="https://mail.google.com/mail/u/0/#inbox"><i style="color:white;" class="fa-solid fa-at display-.8"></i></a>
             <p>Copyrights</p>
           </div>
-
         </div>
       </footer>
     </section>
-    
+  </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
