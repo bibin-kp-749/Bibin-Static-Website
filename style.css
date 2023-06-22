@@ -12,6 +12,13 @@
   object-fit: cover; 
   border-radius: 50%; 
 }
+.nav-link:hover{
+  text-shadow: 2px 2px 2px rgb(71, 160, 232);
+}
+.nav-link:active{
+  font-weight: 500;
+  transform: translatey(.5px);
+}
 .form-control{
   border-color:rgb(176, 173, 173);
   border-style: double;
@@ -23,6 +30,13 @@
 }
 .btn1{
   font-weight: 600;
+}
+.btn1:active{
+  background-color: green;
+  color: white;
+}
+.btn1:hover{
+  box-shadow: 3px 3px 10px grey;
 }
 .color{
   background-color: #65c4e1;
@@ -118,6 +132,56 @@
 #inputarea:hover{
     background-color:#f7fbfc; 
 }
+#inputEmail4:focus{
+  background-color:#f1f1f1e2;
+  border:1px solid #a3d2df ; 
+}
+#inputPassword4:focus{
+  background-color:#f1f1f1e2;
+  border:1px solid #a3d2df ; 
+}
+#inputAddress:focus{
+  background-color:#f1f1f1e2;
+  border:1px solid #a3d2df ; 
+}
+#inputAddress2:focus{
+  background-color:#f1f1f1e2;
+  border:1px solid #a3d2df ; 
+}
+#inputarea:focus{
+  background-color:#f1f1f1e2;
+  border:1px solid #a3d2df ; 
+}
+.cv{
+  border-radius: 50px;
+  width: 10rem;
+  height: 2.5rem;
+  border-style: solid;
+  border-width: 1.5px;
+  color: #65c4e1;
+  background-color: white;
+  border-color: #a3d2df ;
+  font-family: Verdana,sans-serif;
+  padding: auto;
+  margin-top: 1.5rem;
+  font-size: .9em; 
+  
+}
+.cv:hover{
+  background-color:#65c4e1 ;
+  color: white;
+  cursor: auto;
+}
+#facebook:active{
+  text-shadow: 1px 1px 1px white;
+}
+#instagram:active{
+  text-shadow:  1px 1px 5px white;
+}
+#gmail:active{
+    background-color: #65c4e1;
+}
+
 
 
   
